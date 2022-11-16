@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity >=0.4.21 < 0.8.17
 contract SimplePaymentChannel {
     address payable public sender;      // The account sending payments.
     address payable public recipient;   // The account receiving the payments.
