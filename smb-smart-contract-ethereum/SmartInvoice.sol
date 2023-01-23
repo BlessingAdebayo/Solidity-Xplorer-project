@@ -50,7 +50,7 @@ contract SimplePaymentChannel {
         return recoverSigner(message, signature) == sender;
     }
 
-    /// All functions below this are just taken from the chapter
+    /// All functions are good to go
     /// 'creating and verifying signatures' chapter.
 
     function splitSignature(bytes memory sig)
