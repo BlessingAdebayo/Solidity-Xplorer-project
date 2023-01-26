@@ -54,17 +54,4 @@ To run the demo follow these steps:
    ```
 
 4. Run the app using `yarn start`
-   <br/>
-
-## Useful links
-
-- 🏠 [Website](https://daltonic.github.io/)
-- ⚽ [Metamask](https://metamask.io/)
-- 🚀 [Remix Editor](https://remix.ethereum.org/)
-- 💡 [Hardhat](https://hardhat.org/)
-- 📈 [Alchamy](https://www.alchemy.com/)
-- 🔥 [ReactJs](https://reactjs.org/)
-- 🐻 [Solidity](https://soliditylang.org/)
-- 👀 [Ethersjs](https://docs.ethers.io/v5/)
-- 🎅 [Faucet](https://goerli-faucet.pk910.de/)
-- ✨ [Live Demo](https://gameshop-af682.web.app/)
+  
