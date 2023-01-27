@@ -1,14 +1,14 @@
-import Identicon from 'react-identicons'
-import { FaEthereum } from 'react-icons/fa'
-import { Link, useNavigate } from 'react-router-dom'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { setGlobalState, truncate, useGlobalState } from '../store'
-import { connectWallet } from '../Blockchain.Service'
+import Identicon from "react-identicons";
+import { FaEthereum } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { setGlobalState, truncate, useGlobalState } from "../store";
+import { connectWallet } from "../Blockchain.Service";
 
 const Header = () => {
-  const navigate = useNavigate()
-  const [cart] = useGlobalState('cart')
-  const [connectedAccount] = useGlobalState('connectedAccount')
+  const navigate = useNavigate();
+  const [cart] = useGlobalState("cart");
+  const [connectedAccount] = useGlobalState("connectedAccount");
 
   return (
     <div className="flex justify-between items-center shadow-sm shadow-gray-200 p-5">
@@ -17,13 +17,13 @@ const Header = () => {
         className="flex justify-start items-center space-x-1 text-md font-bold"
       >
         <FaEthereum className="cursor-pointer" size={25} />
-        <span>GameShop</span>
+        <span>Xplorer GameShop</span>
       </Link>
 
       <div className="flex justify-end items-center space-x-6">
         <div className="flex justify-center items-center space-x-4">
           <button
-            onClick={() => navigate('/cart')}
+            onClick={() => navigate("/cart")}
             className="rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex 
             align-center cursor-pointer active:bg-gray-300 transition duration-300 
             ease w-max py-1 px-2"
@@ -38,7 +38,7 @@ const Header = () => {
           </button>
 
           <button
-            onClick={() => setGlobalState('menu', 'scale-100')}
+            onClick={() => setGlobalState("menu", "scale-100")}
             className="bg-transparent shadow-sm shadow-gray-400 rounded-full"
           >
             <Identicon
@@ -70,7 +70,7 @@ const Header = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
